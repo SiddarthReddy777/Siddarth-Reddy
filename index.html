@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ccc;
+            display: block;
+            margin: 20px auto;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills, .projects, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skill, .project {
+            flex: 1 1 calc(50% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill:hover, .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .skills, .projects {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p>Welcome to my professional portfolio website!</p>
+</header>
+
+<div class="container">
+
+    <!-- Profile Picture -->
+    <section>
+        <h2>About Me</h2>
+        <img src="siddu.jpg" alt="Your Picture" class="profile-pic">
+        <p>Hello! I'm <strong>[S.Siddarth Reddy]</strong>, a passionate developer with expertise in HTML, CSS, and JavaScript. I enjoy building  responsive, and user-friendly websites.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Building clean, modern, and responsive designs using HTML5 and CSS3.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Creating dynamic and interactive web experiences.</p>
+            </div>
+            <div class="skill">
+                <h3>C language</h3>
+                <p>General purpose programming language.</p>
+            </div>
+            <div class="skill">
+                <h3>Responsive Design</h3>
+                <p>Ensuring seamless experiences on both desktop and mobile devices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Calculator</h3>
+                <p>A simple iphone style calculator which can perform basic math.(Completed)</p>
+                <a href="calculator.html" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Netflix</h3>
+                <p> Just a clown page of Netflix. (Ongoing).</p>
+                <a href="netflix.html" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact Me</h2>
+        <form action="#" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 [S.Siddarth Reddy]. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
