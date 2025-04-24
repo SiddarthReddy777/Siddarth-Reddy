@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namami Gange - Reporting Portal</title>
+    <link rel="stylesheet" href="eaa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Namami Gange - Report an Issue</h1>
+        <form id="reportForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="issue">Issue Type:</label>
+            <select id="issue" required>
+                <option value="">Select an issue</option>
+                <option value="Water Pollution">Water Pollution</option>
+                <option value="Garbage Dumping">Garbage Dumping</option>
+                <option value="Industrial Waste">Industrial Waste</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" placeholder="Describe the issue..." required></textarea>
+
+            <label for="imageUpload">Upload Image:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <img id="previewImage" src="" alt="Image Preview" style="display: none;">
+
+            <button type="submit">Submit Report</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="eaa.js"></script>
+</body>
+</html>
